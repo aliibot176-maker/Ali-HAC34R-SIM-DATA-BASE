@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("✅ Kami Flex SIM Database API is working!");
+  res.send("✅ Ali Flex SIM Database API is working!");
 });
 
 app.get("/api/search", async (req, res) => {
