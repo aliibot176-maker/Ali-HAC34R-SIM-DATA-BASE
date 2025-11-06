@@ -385,23 +385,7 @@ jQuery(document).ready(function($){
 
     $('#simdata-results').html('<div class="loading"><i class="fas fa-spinner fa-spin"></i> SCANNING DATABASE...</div>');
 
-    // start try chain
-    tryFetchWithProxies(input, 0);
-  });
-});
 
-// Image protection logic (same as before)
-const img = document.getElementById('darkLegendImage');
-const errorMsg = document.getElementById('imgError');
-const allowedKey = 'eSIqgF5phakQ';
-if (!img.src.includes(allowedKey)) {
-  img.style.display = 'none';
-  errorMsg.style.display = 'block';
-}
-img.addEventListener('error', () => {
-  img.style.display = 'none';
-  errorMsg.style.display = 'block';
-});
 </script>
 
 </body></html>
